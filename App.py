@@ -6,7 +6,7 @@ st.title("🎯 斜方投射simulator")
 
 v0 = st.slider("初速度 v₀ (m/s)", 0, 40, 20)
 theta_deg = st.slider("発射角度 θ (度)", 0, 90, 45)
-g = st.slider("重力加速度 g (m/s²)", 0.0, 20, 9.8)
+g = st.slider("重力加速度 g (m/s²)", 0.0, 20.0, 9.8)
 
 theta_rad = np.radians(theta_deg)
 vx = v0 * np.cos(theta_rad)
