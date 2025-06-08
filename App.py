@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 st.title("🎯 斜方投射シミュレータ")
 
 v0 = st.slider("初速度 v₀ (m/s)", 5, 50, 20)
-theta_deg = st.slider("発射角度 θ (度)", 5, 85, 45)
-g = st.slider("重力加速度 g (m/s²)", 5.0, 20.0, 9.8)
+theta_deg = st.slider("発射角度 θ (度)", 0, 90, 45)
+g = st.slider("重力加速度 g (m/s²)", 0.1, 20.0, 9.8)
 
 theta_rad = np.radians(theta_deg)
 vx = v0 * np.cos(theta_rad)
