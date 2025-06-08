@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 
-st.title("🎯 斜方投射シミュレータ")
+st.title("🎯 斜方投射simulator")
 
 v0 = st.slider("初速度 v₀ (m/s)", 3, 50, 20)
 theta_deg = st.slider("発射角度 θ (度)", 0, 90, 45)
