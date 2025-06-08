@@ -25,8 +25,8 @@ st.markdown(f"**最高点** ≈ {max_height:.2f} m")
 # プロット
 fig, ax = plt.subplots()
 ax.plot(x, y)
-ax.set_xlabel("距離 x (m)")
-ax.set_ylabel("高さ y (m)")
+ax.set_xlabel("distance x (m)")
+ax.set_ylabel("high y (m)")
 ax.set_title(f"v₀ = {v0} m/s, θ = {theta_deg}°, g = {g} m/s²")
 
 # ★ グラフの範囲を固定！
