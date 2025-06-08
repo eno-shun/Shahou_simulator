@@ -22,10 +22,16 @@ max_height = (vy**2) / (2 * g)
 st.markdown(f"**飛距離** ≈ {range_:.2f} m")
 st.markdown(f"**最高点** ≈ {max_height:.2f} m")
 
+# プロット
 fig, ax = plt.subplots()
 ax.plot(x, y)
-ax.set_xlabel("distance x (m)")
-ax.set_ylabel("high y (m)")
+ax.set_xlabel("距離 x (m)")
+ax.set_ylabel("高さ y (m)")
 ax.set_title(f"v₀ = {v0} m/s, θ = {theta_deg}°, g = {g} m/s²")
+
+# ★ グラフの範囲を固定！
+ax.set_xlim(0, 60)     # 横軸：距離（x）
+ax.set_ylim(0, 25)     # 縦軸：高さ（y）
+
 ax.set_aspect('equal')
 st.pyplot(fig)
